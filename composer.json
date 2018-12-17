@@ -1,0 +1,56 @@
+{
+  "name": "zendframework/zend-expressive-doctrine-hydrator",
+  "description": "Doctrine Hydrator implementation for Zend Expressive",
+  "type": "library",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Julien Guittard",
+      "email": "julien.guittard@me.com"
+    }
+  ],
+  "config": {
+    "discard-changes": true
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/jguittard/zend-expressive-doctrine"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "ext-ctype": "*",
+    "zendframework/zend-expressive-doctrine": "^1.0@dev",
+    "zendframework/zend-hydrator": "^3.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0",
+    "psr/container": "^1.0",
+    "squizlabs/php_codesniffer": "^2.5",
+    "zendframework/zend-coding-standard": "~1.0.0",
+    "phpstan/phpstan": "^0.10.6",
+    "phpstan/phpstan-strict-rules": "^0.10.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zend\\Expressive\\Doctrine\\Hydrator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ZendTest\\Expressive\\Doctrine\\Hydrator\\": "test/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev",
+      "dev-develop": "1.1-dev"
+    },
+    "zf": {
+      "component": "Zend\\Expressive\\Doctrine\\Hydrator",
+      "config-provider": "Zend\\Expressive\\Doctrine\\Hydrator\\ConfigProvider"
+    }
+  }
+}
