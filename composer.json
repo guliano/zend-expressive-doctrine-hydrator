@@ -13,17 +13,11 @@
   "config": {
     "discard-changes": true
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/jguittard/zend-expressive-doctrine"
-    }
-  ],
   "require": {
     "php": "^7.2",
     "ext-ctype": "*",
-    "zendframework/zend-expressive-doctrine": "^1.0@dev",
-    "zendframework/zend-hydrator": "^3.0.0"
+   "zendframework/zend-hydrator": "^3.0.0",
+    "doctrine/orm": "^2.6"
   },
   "require-dev": {
     "phpunit/phpunit": "^7.0",
